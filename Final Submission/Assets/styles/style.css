@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap');
+* {
+    box-sizing: border-box;
+  }
+body {
+    font-family: "League Spartan", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+h1{
+  color: #0e67b1;
+}
+
+  .Kepala {
+    font-size: 25px;
+    padding: 10px;
+    background-color: #BFEAF5;
+    text-align: center;
+    color: #0e67b1;
+  }
+  header {
+    display: inline;
+  }
+  .logo{
+  width: 150px;
+  height: auto;
+ 
+  object-fit: scale-down;
+  object-position: left;
+  }
+header ul{
+    padding-inline: 5rem;
+    display: flex;
+    gap: 2rem;
+}
+header li{
+    list-style-type: none;
+}
+  nav {
+    background-color: #00a2c6;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+  }
+   
+  nav ul {
+    padding-inline: 4rem;
+   
+    display: flex;
+    gap: 2rem;
+  }
+   
+  nav li {
+    list-style-type: none;
+  }
+   
+  nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+  }
+.sen{
+  object-position: center;
+}
+  main {
+    background-color: #EAFDFC;
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+  }
+  .foto{
+    width: 100%;
+    max-height: 300px;
+   
+    object-fit: cover;
+    object-position: center;
+  }
+  .alamat{
+    width: 100%;
+    height: auto;
+    object-fit:scale-down;
+    object-position:center;
+  }
+  footer {
+  padding: 20px;
+  color: #fff;
+  background-color: #00a2c6;
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+	margin-top:22px;
+}
+.dropbtn {
+    position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+  }
+  
+  .dropup {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropup-content {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right:10px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropup-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  #content {
+    flex: 5;
+   
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+  }
+
+  .dropup-content a:hover {background-color: #ddd}
+  
+  .show {display:block;}
+  
+  .dropup:hover .dropbtn {
+    background-color: #2980B9;
+  }
+  .card {
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+  }
+  .profile header {
+    text-align: center;
+  }
+  @media screen and (max-width: 1200px) {
+    main {
+      flex-flow: column nowrap;
+    }
+   
+    main aside {
+      align-self: center;
+    }
+  }
+   
+  @media screen and (max-width: 768px) {
+    nav ul {
+      justify-content: center;
+    }
+   
+    main aside {
+      align-self: stretch;
+    }
+  }
